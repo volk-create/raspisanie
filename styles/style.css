@@ -1,0 +1,79 @@
+.table table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+.table th, .table td {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 8px;
+    text-align: center;
+}
+
+.color {
+    background-color: yellow;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Центрируем заголовок */
+h1 {
+    text-align: center;
+    font-size: 24px; /* Сделаем размер шрифта адаптивным */
+}
+
+/* Контейнер для таблицы */
+.table {
+    width: 100%;
+    overflow-x: auto; /* Горизонтальная прокрутка, если не помещается */
+    margin: 10px auto;
+}
+
+/* Стили для таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Минимальная ширина для корректного отображения */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px; /* Уменьшаем заголовок */
+    }
+
+    .table {
+        overflow-x: auto;
+        display: block;
+        white-space: nowrap; /* Запрещаем перенос строк */
+    }
+
+    th, td {
+        padding: 5px;
+        font-size: 14px; /* Уменьшаем шрифт */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    th, td {
+        font-size: 12px;
+    }
+}
